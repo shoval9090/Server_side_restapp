@@ -111,7 +111,7 @@ public class OrderController {
     }
 
 
-    // 6. הצגת כל orders
+    // 6. החזרת כל המוצרים עם מחיר אחרי הנחה של 25%
     @GetMapping("/orders/{id}/sale")
     public ResponseEntity<CollectionModel<EntityModel<Product>>>
     productsByOrderWithSale(@PathVariable long id) {
